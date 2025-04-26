@@ -1,0 +1,52 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# TypeScript cache
+*.tsbuildinfo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE/editor files
+.vscode/
+.idea/
+
+# Tailwind generated styles (if not part of your source)
+*.css.map
+
+# PostgreSQL (optional)
+*.dump
+*.sql
+
+# Frontend framework caches
+.next/
+out/
+.svelte-kit/
+.vercel/
+.netlify/
+
+# Optional: Prisma generated files (if used)
+prisma/migrations/
+
+# Coverage and testing
+coverage/
+*.lcov
+
+# Misc
+*.tgz
