@@ -12,6 +12,7 @@ app.use(
   cors({
     origin: ["https://devblog-lovat.vercel.app", "http://localhost:5173"],
     credentials: true,
+    allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
 app.use(require("./routers/routes"));
