@@ -36,7 +36,7 @@ const Home: React.FC = () => {
   const hanldeSearch = async () => {
     try {
       const response = await fetch(
-        "https://localhost:8080" + "/search/post/" + searchQuery,
+        "https://devblog-kr5o.onrender.com" + "/search/post/" + searchQuery,
         {
           method: "GET",
           headers: {
