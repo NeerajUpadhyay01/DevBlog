@@ -10,8 +10,5 @@ console.log(DatabaseUrl);
 
 const pool = new Pool({
   connectionString: DatabaseUrl,
-  ssl: {
-    rejectUnauthorized: false,
-  },
 });
 export default pool;
