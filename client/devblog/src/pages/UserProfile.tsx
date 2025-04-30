@@ -2,6 +2,7 @@ import React, { useState, useContext, useEffect } from "react";
 import { Icon } from "@iconify/react";
 import { UserContext } from "../Context/UserData";
 import ProfilePost from "../components/ProfilePost";
+import { useNavigate } from "react-router-dom";
 
 interface blogpostbody {
   id: String;
@@ -21,6 +22,8 @@ const UserProfile: React.FC = () => {
   const [userPosts, setUserPosts] = useState<blogpostbody[]>();
   const enableEdit = () => setEdit(true);
   const userdata = useContext(UserContext);
+
+  const Navigate = useNavigate();
 
   const [editProfile, setEditProfile] = useState({
     id: userdata?.user.id,
@@ -82,6 +85,7 @@ const UserProfile: React.FC = () => {
       if (response) {
         const data = await response.json();
         console.log(data);
+        Navigate("/profile");
       } else {
         console.log("Cannot edit profile");
       }
