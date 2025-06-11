@@ -28,9 +28,9 @@ const Home: React.FC = () => {
   const [sub, setSub] = useState<boolean>(false);
   const [searchQuery, setSearchQuery] = useState<String>("");
   const [resultData, setResultData] = useState<PostInt[] | undefined>();
-  const [searchAiQuery, setSearchAiQuery] = useState<String>("");
-  const [resultAiData, setResultAiData] = useState<string | undefined>();
-  const [startAi, setStartAi] = useState<boolean>();
+  // const [searchAiQuery, setSearchAiQuery] = useState<String>("");
+  // const [resultAiData, setResultAiData] = useState<string | undefined>();
+  // const [startAi, setStartAi] = useState<boolean>();
 
   // https://devblog-kr5o.onrender.com
   const hanldeSearch = async () => {
@@ -57,35 +57,35 @@ const Home: React.FC = () => {
     }
   };
 
-  const fetchAi = async () => {
-    setStartAi(true);
-    try {
-      const response = await fetch(
-        "https://devblog-kr5o.onrender.com/fetch/ai",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            query: searchAiQuery,
-          }),
-        }
-      );
-      if (response) {
-        const data = await response.json();
-        if (data.success == true) {
-          console.log(data);
-          setStartAi(false);
-          setResultAiData(data.content);
-        }
-      } else {
-        console.log("No response");
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  };
+  // const fetchAi = async () => {
+  //   setStartAi(true);
+  //   try {
+  //     const response = await fetch(
+  //       "https://devblog-kr5o.onrender.com/fetch/ai",
+  //       {
+  //         method: "POST",
+  //         headers: {
+  //           "Content-Type": "application/json",
+  //         },
+  //         body: JSON.stringify({
+  //           query: searchAiQuery,
+  //         }),
+  //       }
+  //     );
+  //     if (response) {
+  //       const data = await response.json();
+  //       if (data.success == true) {
+  //         console.log(data);
+  //         setStartAi(false);
+  //         setResultAiData(data.content);
+  //       }
+  //     } else {
+  //       console.log("No response");
+  //     }
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
 
   useEffect(() => {
     postinfo?.fetchPosts();
@@ -226,7 +226,7 @@ const Home: React.FC = () => {
           </div>
         </div> */}
         <div>
-          {resultAiData && startAi == false ? (
+          {/* {resultAiData && startAi == false ? (
             <div className="w-[100%] flex flex-col justify-around items-center mt-[5%]">
               <div className="w-[100%] flex flex-row justify-around items-center">
                 <span className="rounded-md h-[0.15rem] bg-indigo-600 w-[30vw]"></span>
@@ -247,7 +247,7 @@ const Home: React.FC = () => {
                 height="10vh"
               />
             </div>
-          ) : null}
+          ) : null} */}
           <div className="w-[100%] flex flex-row justify-around items-center mt-[5%]">
             <span className="rounded-md h-[0.15rem] bg-indigo-600 w-[30vw]"></span>
             <h1 className="text-xl font-semibold">All Articles</h1>
