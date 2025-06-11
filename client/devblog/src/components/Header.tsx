@@ -143,14 +143,6 @@ const Header: React.FC = () => {
               onClick={() => {
                 setmobileDevice(false);
               }}
-              to="/contact"
-            >
-              Contact
-            </Link>
-            <Link
-              onClick={() => {
-                setmobileDevice(false);
-              }}
               to="/write"
             >
               Add Post
