@@ -35,9 +35,6 @@ const Header: React.FC = () => {
               <Link to="/about">About</Link>
             </li>
             <li className="hover:text-indigo-600">
-              <Link to="/contact">Contact</Link>
-            </li>
-            <li className="hover:text-indigo-600">
               <Link to="/write">
                 <span className="text-center">Add Post</span>
               </Link>

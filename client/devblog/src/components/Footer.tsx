@@ -12,12 +12,9 @@ const Footer: React.FC = () => {
           </Link>
         </h1>
         <div className="h-max w-max">
-          <ul className="md:w-[35vw] w-[80vw] text-base font-semibold h-max flex flex-row items-center justify-around">
+          <ul className="md:w-[35vw] w-[80vw] text-base font-semibold h-max flex flex-row items-center justify-center gap-10">
             <Link className="hover:text-indigo-600" to="/about">
               About
-            </Link>
-            <Link className="hover:text-indigo-600" to="/contact">
-              Contact
             </Link>
             <Link className="hover:text-indigo-600" to="/admin/reg">
               Admin

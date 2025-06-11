@@ -122,7 +122,7 @@ const Home: React.FC = () => {
                       height={"6vh"}
                     />
                     <span className="text-base font-semibold text-white">
-                      Learn More
+                      <Link to="/about">Learn More</Link>
                     </span>
                   </span>
                 </span>
@@ -178,9 +178,9 @@ const Home: React.FC = () => {
                   Get Started for free
                 </button>
               )}
-              <div className="bg-slate-100 h-max w-max rounded-full p-1.5 text-base flex flex-row items-center">
+              <div className="bg-slate-100 h-max w-max rounded-full p-1.5 text-base flex flex-row items-center pr-2">
                 <input
-                  className="md:w-[30vw] w-[70vw] bg-slate-100 placeholder:text-black placeholder:font-semibold"
+                  className="md:w-[30vw] w-[70vw] bg-slate-100 placeholder:text-black placeholder:font-semibold pl-2"
                   type="text"
                   placeholder="Search blogpost..."
                   value={searchQuery.toString()}
@@ -198,7 +198,7 @@ const Home: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="h-max w-screen flex items-center justify-center">
+        {/* <div className="h-max w-screen flex items-center justify-center">
           <div className="bg-white border-gray-200 border-2 md:h-[30vh] h-[20vh] md:w-[50vw] w-[85vw] justify-evenly flex flex-col items-center p-3 rounded-lg shadow-2xl">
             <h2 className="title md:text-xl">
               Get New Ideas to{" "}
@@ -224,7 +224,7 @@ const Home: React.FC = () => {
               />
             </div>
           </div>
-        </div>
+        </div> */}
         <div>
           {resultAiData && startAi == false ? (
             <div className="w-[100%] flex flex-col justify-around items-center mt-[5%]">

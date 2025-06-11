@@ -99,7 +99,7 @@ const UserProfile: React.FC = () => {
   }, []);
 
   return (
-    <div className="h-[100vh] w-[100vw] flex flex-col gap-5 items-center">
+    <div className="h-[100vh] w-[100vw] flex flex-col gap-5 justify-center items-center">
       {edit === false ? (
         <>
           <div className="h-max w-[100vw] flex flex-col gap-5">

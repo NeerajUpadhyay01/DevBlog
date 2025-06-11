@@ -35,18 +35,8 @@ const About: React.FC = () => {
               </span>
               <br />
               DevBlog offers distinct roles to cater to every user's needs -
-              Developers / Bloggers, DevBlog Admins, and Content Contributors.
-              Each role has its unique privileges and responsibilities.
-            </p>
-          </li>
-          <li className="flex flex-row items-center h-max gap-2">
-            <p>
-              <span className="text-indigo-600 font-semibold">
-                Ai Suggestions:{" "}
-              </span>
-              <br />
-              Users can take suggestions, help of Ai to get new ideas or to
-              solve a problem.
+              DevBlog Admins, and Content Contributors. Each role has its unique
+              privileges and responsibilities.
             </p>
           </li>
           <li className="flex flex-row items-center h-max gap-2">
@@ -103,17 +93,6 @@ const About: React.FC = () => {
           <li className="flex flex-row items-center h-max gap-2">
             <p>
               <span className="text-indigo-600 font-semibold">
-                Admin Empowerment:{" "}
-              </span>
-              <br />
-              DevBlog Admins have the tools to manage the platform effectively.
-              They can control promotional offers, discounts, and provide a
-              seamless experience for all users.
-            </p>
-          </li>
-          <li className="flex flex-row items-center h-max gap-2">
-            <p>
-              <span className="text-indigo-600 font-semibold">
                 RESTful APIs:{" "}
               </span>
               <br />
@@ -137,17 +116,6 @@ const About: React.FC = () => {
 
         <h1 className="font-semibold text-xl">Insights :</h1>
         <ul className="pl-5 flex flex-col gap-3">
-          <li className="flex flex-row items-center h-max gap-2">
-            <p>
-              <span className="text-indigo-600 font-semibold">
-                Comprehensive Analytics:{" "}
-              </span>
-              <br />
-              DevBlog offers advanced analytics, including traffic statistics,
-              engagement metrics, and more, empowering DevBlog Admins with
-              valuable insights for optimizing the platform.
-            </p>
-          </li>
           <li className="flex flex-row items-center h-max gap-2">
             <p>
               <span className="text-indigo-600 font-semibold">

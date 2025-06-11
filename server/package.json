@@ -32,7 +32,6 @@
     "@types/nodemailer": "^6.4.9",
     "@types/pg": "^8.10.2",
     "@types/uuid": "^9.0.2",
-    "bard-ai": "^2.0.3",
     "concurrently": "^8.2.0",
     "nodemon": "^3.0.1",
     "typescript": "^5.1.6"
